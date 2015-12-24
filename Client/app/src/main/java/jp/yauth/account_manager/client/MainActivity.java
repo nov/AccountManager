@@ -17,14 +17,14 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class MainActivity extends AppCompatActivity {
-    AccountManager accountManager;
+    AccountManager mAccountManager;
     Map<String, String> idpSettings;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        accountManager = AccountManager.get(this);
+        mAccountManager = AccountManager.get(this);
         loadButtons();
     }
 
@@ -82,7 +82,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void getAuthToken(String accountType, String authTokenType) {
-        Account[] accounts = accountManager.getAccountsByType(accountType);
+        Account[] accounts = mAccountManager.getAccountsByType(accountType);
         rememberIdpSettings(accountType, authTokenType);
         if (accounts.length > 0) {
             getAuthToken(accounts[0], authTokenType);
@@ -93,7 +93,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void getAuthToken(final Account account, String authTokenType) {
-        accountManager.getAuthToken(account, authTokenType, null, this, new AccountManagerCallback<Bundle>() {
+        mAccountManager.getAuthToken(account, authTokenType, null, this, new AccountManagerCallback<Bundle>() {
             @Override
             public void run(AccountManagerFuture<Bundle> future) {
                 try {
@@ -101,7 +101,7 @@ public class MainActivity extends AppCompatActivity {
                     String authToken = bundle.getString(AccountManager.KEY_AUTHTOKEN);
                     Log.d("access_token", authToken);
                     notify(String.format("token: %s", authToken));
-                    accountManager.invalidateAuthToken(account.type, authToken);
+                    mAccountManager.invalidateAuthToken(account.type, authToken);
                 } catch (Exception e) {
                     Log.d("error", e.getMessage());
                     notify(String.format("error: %s", e.getMessage()));
