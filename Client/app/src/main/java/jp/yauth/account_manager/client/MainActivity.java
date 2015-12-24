@@ -84,7 +84,8 @@ public class MainActivity extends AppCompatActivity {
     private void getAuthToken(String accountType, String authTokenType) {
         Account[] accounts = mAccountManager.getAccountsByType(accountType);
         rememberIdpSettings(accountType, authTokenType);
-        if (accounts.length > 0) {
+        if (accounts.length == 1) {
+            Log.d("account", accounts[0].name);
             getAuthToken(accounts[0], authTokenType);
         } else {
             Intent intent = AccountManager.newChooseAccountIntent(null, null, new String[]{accountType}, null, null, null, null);
@@ -98,6 +99,10 @@ public class MainActivity extends AppCompatActivity {
             public void run(AccountManagerFuture<Bundle> future) {
                 try {
                     Bundle bundle = future.getResult();
+                    for (String key : bundle.keySet()) {
+                        Object value = bundle.get(key);
+                        Log.d("callback", String.format("%s %s", key, value.toString()));
+                    }
                     String authToken = bundle.getString(AccountManager.KEY_AUTHTOKEN);
                     Log.d("access_token", authToken);
                     notify(String.format("token: %s", authToken));

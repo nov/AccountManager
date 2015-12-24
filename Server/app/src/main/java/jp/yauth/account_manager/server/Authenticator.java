@@ -3,8 +3,10 @@ package jp.yauth.account_manager.server;
 import android.accounts.AbstractAccountAuthenticator;
 import android.accounts.Account;
 import android.accounts.AccountAuthenticatorResponse;
+import android.accounts.AccountManager;
 import android.accounts.NetworkErrorException;
 import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 
@@ -28,8 +30,13 @@ public class Authenticator extends AbstractAccountAuthenticator {
 
     @Override
     public Bundle addAccount(AccountAuthenticatorResponse response, String accountType, String authTokenType, String[] requiredFeatures, Bundle options) throws NetworkErrorException {
-        Log.d("addAccount", mContext.getString(R.string.authenticator_type));
-        return null;
+        final Intent intent = new Intent(mContext, MainActivity.class);
+        intent.putExtra(AccountManager.KEY_ACCOUNT_AUTHENTICATOR_RESPONSE, response);
+
+        final Bundle bundle = new Bundle();
+        bundle.putParcelable(AccountManager.KEY_INTENT, intent);
+
+        return bundle;
     }
 
     @Override
@@ -39,7 +46,26 @@ public class Authenticator extends AbstractAccountAuthenticator {
 
     @Override
     public Bundle getAuthToken(AccountAuthenticatorResponse response, Account account, String authTokenType, Bundle options) throws NetworkErrorException {
-        return null;
+        Log.d("getAuthToken", account.type);
+        for (String key : options.keySet()) {
+            Object value = options.get(key);
+            Log.d("callback", String.format("%s %s", key, value.toString()));
+        }
+
+        AccountManager accountManager = AccountManager.get(mContext);
+        String refreshToken = accountManager.getPassword(account);
+        Log.d("refresh_token", refreshToken);
+        // TODO: issue authToken using stored refreshToken
+
+        String authToken = String.format("access_token for scope=\"%s\"", authTokenType);
+        accountManager.setAuthToken(account, authTokenType, authToken);
+
+        Bundle result = new Bundle();
+        result.putString(AccountManager.KEY_ACCOUNT_NAME, account.name);
+        result.putString(AccountManager.KEY_ACCOUNT_TYPE, mAccountType);
+        result.putString(AccountManager.KEY_AUTHTOKEN, authToken);
+        result.putString("id_token", "header.payload.signature");
+        return result;
     }
 
     @Override
