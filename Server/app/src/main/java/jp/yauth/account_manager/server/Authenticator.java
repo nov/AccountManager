@@ -7,6 +7,9 @@ import android.accounts.AccountManager;
 import android.accounts.NetworkErrorException;
 import android.content.Context;
 import android.content.Intent;
+import android.content.pm.PackageInfo;
+import android.content.pm.PackageManager;
+import android.content.pm.Signature;
 import android.os.Bundle;
 import android.util.Log;
 
@@ -49,8 +52,10 @@ public class Authenticator extends AbstractAccountAuthenticator {
         Log.d("getAuthToken", account.type);
         for (String key : options.keySet()) {
             Object value = options.get(key);
-            Log.d("callback", String.format("%s %s", key, value.toString()));
+            Log.d("options", String.format("%s %s", key, value.toString()));
         }
+
+        verifySender((String) options.get("androidPackageName"));
 
         AccountManager accountManager = AccountManager.get(mContext);
         String refreshToken = accountManager.getPassword(account);
@@ -81,5 +86,17 @@ public class Authenticator extends AbstractAccountAuthenticator {
     @Override
     public Bundle hasFeatures(AccountAuthenticatorResponse response, Account account, String[] features) throws NetworkErrorException {
         return null;
+    }
+
+    private void verifySender(String packageName) {
+        PackageManager packageManager = mContext.getPackageManager();
+        PackageInfo pkginfo = null;
+        try {
+            pkginfo = packageManager.getPackageInfo(packageName, PackageManager.GET_SIGNATURES);
+            Signature signature = pkginfo.signatures[0];
+            Log.d("signature", signature.toString());
+        } catch (PackageManager.NameNotFoundException e) {
+            e.printStackTrace();
+        }
     }
 }
