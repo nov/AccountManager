@@ -14,7 +14,6 @@ import android.widget.RelativeLayout;
 import android.support.design.widget.Snackbar;
 
 import java.util.HashMap;
-import java.util.Iterator;
 import java.util.Map;
 
 public class MainActivity extends AppCompatActivity {
@@ -32,13 +31,11 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
-        Log.d("intent:request", String.valueOf(requestCode));
-        Log.d("intent:result", String.valueOf(resultCode));
         if (data != null) {
             Bundle bundle = data.getExtras();
             for (String key : bundle.keySet()) {
                 Object value = bundle.get(key);
-                Log.d("intent:data", String.format("%s %s (%s)", key, value.toString(), value.getClass().getName()));
+                Log.d("callback", String.format("%s %s", key, value.toString()));
             }
             Account account = new Account(
                     data.getStringExtra(AccountManager.KEY_ACCOUNT_NAME),
@@ -79,7 +76,7 @@ public class MainActivity extends AppCompatActivity {
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                getAuthToken("jp.yauth.account_manager.provider", "openid profile email");
+                getAuthToken("jp.yauth.account_manager.server", "openid profile email");
             }
         });
     }
