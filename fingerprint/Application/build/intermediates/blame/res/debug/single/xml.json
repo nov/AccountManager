@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "/Users/uu091468/Desktop/fingerprint/Application/build/intermediates/res/merged/debug/xml/preferences.xml",
+        "source": "/Users/uu091468/Desktop/fingerprint/Application/src/main/res/xml/preferences.xml"
+    },
+    {
+        "merged": "/Users/uu091468/Desktop/fingerprint/Application/build/intermediates/res/merged/debug/xml/authenticator.xml",
+        "source": "/Users/uu091468/Desktop/fingerprint/Application/src/main/res/xml/authenticator.xml"
+    }
+]

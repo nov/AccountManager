@@ -13,6 +13,7 @@ import android.content.pm.Signature;
 import android.os.Bundle;
 import android.util.Log;
 
+
 /**
  * Created by nov.matake on 12/24/15.
  */
@@ -62,7 +63,7 @@ public class Authenticator extends AbstractAccountAuthenticator {
         Log.d("refresh_token", refreshToken);
         // TODO: issue authToken using stored refreshToken
 
-        String authToken = String.format("access_token for scope=\"%s\"", authTokenType);
+        String authToken = String.format("access_token for scope=\"%s\" (Server)", authTokenType);
         accountManager.setAuthToken(account, authTokenType, authToken);
 
         Bundle result = new Bundle();

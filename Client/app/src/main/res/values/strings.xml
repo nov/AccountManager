@@ -3,4 +3,6 @@
     <string name="button_label_fb">Facebook</string>
     <string name="button_label_google">Google</string>
     <string name="button_label_nov">Nov OP</string>
+    <!--<string name="authenticator_label">Nov</string>-->
+    <!--<string name="authenticator_type">jp.yauth.account_manager.server</string>-->
 </resources>
