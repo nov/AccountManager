@@ -1,22 +1,22 @@
 [
     {
-        "merged": "/Users/uu091468/Desktop/fingerprint/Application/build/intermediates/res/merged/debug/layout/fingerprint_dialog_container.xml",
-        "source": "/Users/uu091468/Desktop/fingerprint/Application/src/main/res/layout/fingerprint_dialog_container.xml"
+        "merged": "/Users/uu091468/Desktop/dev/private/AccountManager/fingerprint/Application/build/intermediates/res/merged/debug/layout/activity_main.xml",
+        "source": "/Users/uu091468/Desktop/dev/private/AccountManager/fingerprint/Application/src/main/res/layout/activity_main.xml"
     },
     {
-        "merged": "/Users/uu091468/Desktop/fingerprint/Application/build/intermediates/res/merged/debug/layout/fingerprint_authenticator.xml",
-        "source": "/Users/uu091468/Desktop/fingerprint/Application/src/main/res/layout/fingerprint_authenticator.xml"
+        "merged": "/Users/uu091468/Desktop/dev/private/AccountManager/fingerprint/Application/build/intermediates/res/merged/debug/layout/fingerprint_dialog_backup.xml",
+        "source": "/Users/uu091468/Desktop/dev/private/AccountManager/fingerprint/Application/src/main/res/layout/fingerprint_dialog_backup.xml"
     },
     {
-        "merged": "/Users/uu091468/Desktop/fingerprint/Application/build/intermediates/res/merged/debug/layout/activity_main.xml",
-        "source": "/Users/uu091468/Desktop/fingerprint/Application/src/main/res/layout/activity_main.xml"
+        "merged": "/Users/uu091468/Desktop/dev/private/AccountManager/fingerprint/Application/build/intermediates/res/merged/debug/layout/fingerprint_dialog_content.xml",
+        "source": "/Users/uu091468/Desktop/dev/private/AccountManager/fingerprint/Application/src/main/res/layout/fingerprint_dialog_content.xml"
     },
     {
-        "merged": "/Users/uu091468/Desktop/fingerprint/Application/build/intermediates/res/merged/debug/layout/fingerprint_dialog_content.xml",
-        "source": "/Users/uu091468/Desktop/fingerprint/Application/src/main/res/layout/fingerprint_dialog_content.xml"
+        "merged": "/Users/uu091468/Desktop/dev/private/AccountManager/fingerprint/Application/build/intermediates/res/merged/debug/layout/fingerprint_authenticator.xml",
+        "source": "/Users/uu091468/Desktop/dev/private/AccountManager/fingerprint/Application/src/main/res/layout/fingerprint_authenticator.xml"
     },
     {
-        "merged": "/Users/uu091468/Desktop/fingerprint/Application/build/intermediates/res/merged/debug/layout/fingerprint_dialog_backup.xml",
-        "source": "/Users/uu091468/Desktop/fingerprint/Application/src/main/res/layout/fingerprint_dialog_backup.xml"
+        "merged": "/Users/uu091468/Desktop/dev/private/AccountManager/fingerprint/Application/build/intermediates/res/merged/debug/layout/fingerprint_dialog_container.xml",
+        "source": "/Users/uu091468/Desktop/dev/private/AccountManager/fingerprint/Application/src/main/res/layout/fingerprint_dialog_container.xml"
     }
 ]

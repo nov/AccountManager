@@ -16,8 +16,7 @@ public class FingerPrintAuthenticator extends Activity {
     private static final String DIALOG_FRAGMENT_TAG = "myFragment";
 
     @Inject FingerprintAuthenticationDialogFragment mFragment;
-    @Inject
-    Signature mSignature;
+    @Inject Signature mSignature;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

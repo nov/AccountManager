@@ -4,30 +4,35 @@
     api-level="23"
     density="420dpi"
     format="7"
-    timestamp="3059993122402"
-    token="-4329552770589188966" >
+    timestamp="5566949826200"
+    token="-6945389225640171407" >
 
     <task
         name="javac"
-        duration="1748" />
+        duration="1358" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="478" />
+        duration="74" />
     <task
         name="verifier"
-        duration="324" />
+        duration="4" />
 
     <artifact
-        location="/Users/uu091468/Desktop/fingerprint/Application/build/outputs/apk/Application-debug.apk"
-        type="MAIN" />
+        location="/Users/uu091468/Desktop/dev/private/AccountManager/fingerprint/Application/build/intermediates/transforms/dex/debug/folders/1000/5/slice_2/classes.dex"
+        type="DEX" />
 
-    <build timestamp="3059993122402" >
+    <build timestamp="5060324941508" >
         <artifact
-            location="/Users/uu091468/Desktop/fingerprint/Application/build/outputs/apk/Application-debug.apk"
+            location="/Users/uu091468/Desktop/dev/private/AccountManager/fingerprint/Application/build/outputs/apk/Application-debug.apk"
             type="MAIN" />
+    </build>
+    <build timestamp="5566949826200" >
+        <artifact
+            location="/Users/uu091468/Desktop/dev/private/AccountManager/fingerprint/Application/build/intermediates/transforms/dex/debug/folders/1000/5/slice_2/classes.dex"
+            type="DEX" />
     </build>
 
 </instant-run>

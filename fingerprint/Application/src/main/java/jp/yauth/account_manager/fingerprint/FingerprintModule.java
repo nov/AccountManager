@@ -42,7 +42,7 @@ import dagger.Provides;
  */
 @Module(
         library = true,
-        injects = {MainActivity.class}
+        injects = {MainActivity.class, FingerPrintAuthenticator.class}
 )
 public class FingerprintModule {
 

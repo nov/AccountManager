@@ -38,4 +38,5 @@
     <string name="use_fingerprint_to_authenticate_key" >use_fingerprint_to_authenticate_key</string>
     <string name="authenticator_label">Nov</string>
     <string name="authenticator_type">jp.yauth.account_manager.server</string>
+    <string name="action_fingerprint_authenticator">FingerPrint Authenticator</string>
 </resources>

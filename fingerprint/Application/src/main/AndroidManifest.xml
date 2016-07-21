@@ -41,6 +41,10 @@
             android:name=".SettingsActivity"
             android:label="@string/action_settings" />
 
+        <activity
+            android:name=".FingerPrintAuthenticator"
+            android:label="@string/action_fingerprint_authenticator" />
+
         <service
             android:name=".AuthenticationService"
             android:exported="false">

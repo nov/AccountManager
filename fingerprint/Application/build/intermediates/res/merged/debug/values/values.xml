@@ -18,6 +18,7 @@
     <dimen name="margin_small">8dp</dimen>
     <dimen name="margin_tiny">4dp</dimen>
     <dimen name="vertical_page_margin">@dimen/margin_medium</dimen>
+    <string name="action_fingerprint_authenticator">FingerPrint Authenticator</string>
     <string name="action_settings">Settings</string>
     <string name="app_name">AsymmetricFingerprintDialog</string>
     <string name="authenticator_label">Nov</string>

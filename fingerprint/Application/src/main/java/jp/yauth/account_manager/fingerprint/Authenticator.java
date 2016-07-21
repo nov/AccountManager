@@ -62,7 +62,7 @@ public class Authenticator extends AbstractAccountAuthenticator {
         Log.d("refresh_token", refreshToken);
         // TODO: issue authToken using stored refreshToken
 
-        String authToken = String.format("access_token for scope=\"%s\" (Client)", authTokenType);
+        String authToken = String.format("access_token for scope=\"%s\" (fingerprint)", authTokenType);
         accountManager.setAuthToken(account, authTokenType, authToken);
 
         Bundle result = new Bundle();

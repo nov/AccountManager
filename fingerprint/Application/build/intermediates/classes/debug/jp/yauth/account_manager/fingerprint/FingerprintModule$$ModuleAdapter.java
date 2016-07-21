@@ -14,7 +14,7 @@ import javax.inject.Provider;
  * instance provision of types served by {@code @Provides} methods.
  */
 public final class FingerprintModule$$ModuleAdapter extends ModuleAdapter<FingerprintModule> {
-  private static final String[] INJECTS = { "members/jp.yauth.account_manager.fingerprint.MainActivity", };
+  private static final String[] INJECTS = { "members/jp.yauth.account_manager.fingerprint.MainActivity", "members/jp.yauth.account_manager.fingerprint.FingerPrintAuthenticator", };
   private static final Class<?>[] STATIC_INJECTIONS = { };
   private static final Class<?>[] INCLUDES = { };
 

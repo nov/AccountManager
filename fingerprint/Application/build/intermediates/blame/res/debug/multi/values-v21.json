@@ -1,6 +1,6 @@
 [
     {
-        "outputFile": "/Users/uu091468/Desktop/fingerprint/Application/build/intermediates/res/merged/debug/values-v21/values-v21.xml",
+        "outputFile": "/Users/uu091468/Desktop/dev/private/AccountManager/fingerprint/Application/build/intermediates/res/merged/debug/values-v21/values-v21.xml",
         "map": [
             {
                 "to": {
@@ -12,7 +12,7 @@
                     "endOffset": 131
                 },
                 "from": {
-                    "file": "/Users/uu091468/Desktop/fingerprint/Application/src/main/res/values-v21/base-template-styles.xml",
+                    "file": "/Users/uu091468/Desktop/dev/private/AccountManager/fingerprint/Application/src/main/res/values-v21/base-template-styles.xml",
                     "position": {
                         "startLine": 20,
                         "startColumn": 4,

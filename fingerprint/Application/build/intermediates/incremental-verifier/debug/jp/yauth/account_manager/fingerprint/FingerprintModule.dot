@@ -1,5 +1,7 @@
 digraph G1 {
   concentrate = true;
+  FingerPrintAuthenticator -> FingerprintAuthenticationDialogFragment;
+  FingerPrintAuthenticator -> Signature;
   n2 [label="FingerprintUiHelper$FingerprintUiHelperBuilder"];
   FingerprintAuthenticationDialogFragment -> n2;
   FingerprintAuthenticationDialogFragment -> SharedPreferences;

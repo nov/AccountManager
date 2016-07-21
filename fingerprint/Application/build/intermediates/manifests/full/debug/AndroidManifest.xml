@@ -44,6 +44,9 @@
         <activity
             android:name="jp.yauth.account_manager.fingerprint.SettingsActivity"
             android:label="@string/action_settings" />
+        <activity
+            android:name="jp.yauth.account_manager.fingerprint.FingerPrintAuthenticator"
+            android:label="@string/action_fingerprint_authenticator" />
 
         <service
             android:name="jp.yauth.account_manager.fingerprint.AuthenticationService"

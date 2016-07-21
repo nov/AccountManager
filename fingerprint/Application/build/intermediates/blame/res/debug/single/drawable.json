@@ -1,14 +1,14 @@
 [
     {
-        "merged": "/Users/uu091468/Desktop/fingerprint/Application/build/intermediates/res/merged/debug/drawable/card.xml",
-        "source": "/Users/uu091468/Desktop/fingerprint/Application/src/main/res/drawable/card.xml"
+        "merged": "/Users/uu091468/Desktop/dev/private/AccountManager/fingerprint/Application/build/intermediates/res/merged/debug/drawable/ic_fingerprint_error.xml",
+        "source": "/Users/uu091468/Desktop/dev/private/AccountManager/fingerprint/Application/src/main/res/drawable/ic_fingerprint_error.xml"
     },
     {
-        "merged": "/Users/uu091468/Desktop/fingerprint/Application/build/intermediates/res/merged/debug/drawable/ic_fingerprint_error.xml",
-        "source": "/Users/uu091468/Desktop/fingerprint/Application/src/main/res/drawable/ic_fingerprint_error.xml"
+        "merged": "/Users/uu091468/Desktop/dev/private/AccountManager/fingerprint/Application/build/intermediates/res/merged/debug/drawable/ic_fingerprint_success.xml",
+        "source": "/Users/uu091468/Desktop/dev/private/AccountManager/fingerprint/Application/src/main/res/drawable/ic_fingerprint_success.xml"
     },
     {
-        "merged": "/Users/uu091468/Desktop/fingerprint/Application/build/intermediates/res/merged/debug/drawable/ic_fingerprint_success.xml",
-        "source": "/Users/uu091468/Desktop/fingerprint/Application/src/main/res/drawable/ic_fingerprint_success.xml"
+        "merged": "/Users/uu091468/Desktop/dev/private/AccountManager/fingerprint/Application/build/intermediates/res/merged/debug/drawable/card.xml",
+        "source": "/Users/uu091468/Desktop/dev/private/AccountManager/fingerprint/Application/src/main/res/drawable/card.xml"
     }
 ]

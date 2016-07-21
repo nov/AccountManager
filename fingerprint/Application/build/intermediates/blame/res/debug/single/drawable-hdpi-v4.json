@@ -1,10 +1,10 @@
 [
     {
-        "merged": "/Users/uu091468/Desktop/fingerprint/Application/build/intermediates/res/merged/debug/drawable-hdpi-v4/ic_fp_40px.png",
-        "source": "/Users/uu091468/Desktop/fingerprint/Application/src/main/res/drawable-hdpi/ic_fp_40px.png"
+        "merged": "/Users/uu091468/Desktop/dev/private/AccountManager/fingerprint/Application/build/intermediates/res/merged/debug/drawable-hdpi-v4/ic_fp_40px.png",
+        "source": "/Users/uu091468/Desktop/dev/private/AccountManager/fingerprint/Application/src/main/res/drawable-hdpi/ic_fp_40px.png"
     },
     {
-        "merged": "/Users/uu091468/Desktop/fingerprint/Application/build/intermediates/res/merged/debug/drawable-hdpi-v4/tile.9.png",
-        "source": "/Users/uu091468/Desktop/fingerprint/Application/src/main/res/drawable-hdpi/tile.9.png"
+        "merged": "/Users/uu091468/Desktop/dev/private/AccountManager/fingerprint/Application/build/intermediates/res/merged/debug/drawable-hdpi-v4/tile.9.png",
+        "source": "/Users/uu091468/Desktop/dev/private/AccountManager/fingerprint/Application/src/main/res/drawable-hdpi/tile.9.png"
     }
 ]
